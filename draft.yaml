@@ -1,0 +1,38 @@
+models:
+  Topic:
+    parent_id: id foreign:topics nullable
+    name: string unique
+    slug: string unique
+    description: longtext nullable
+    relationships: belongsToMany:Story
+
+  Story:
+    author_id: id foreign:users
+    title: string unique
+    slug: string unique
+    content: string unique
+    published_at: timestamp nullable
+    status: enum:draft,pending_review,published,scheduled,archived,rejected default:draft
+    cover_thumbnail: string
+    relationships:
+      belongsToMany:Topic
+      hasMany:Comment
+      #  hasMany: Comment:reply
+
+  Comment:
+    parent_id: id foreign:comments nullable onDelete
+    story_id: id foreign:stories
+    user_id: id foreign:users
+    content: longtext
+    relationships:
+      belongsTo:Story
+      belongsTo:User
+
+  Bookmark:
+    story_id: id foreign:stories
+    user_id: id foreign:users
+
+  # Setting
+
+controllers:
+  # ...

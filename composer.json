@@ -12,6 +12,7 @@
         "laravel/scout": "^10.9",
         "laravel/socialite": "^5.14",
         "laravel/tinker": "^2.9",
+        "overtrue/laravel-follow": "^5.2",
         "spatie/laravel-medialibrary": "^11.4",
         "spatie/laravel-permission": "^6.7",
         "spatie/laravel-sluggable": "^3.6",
