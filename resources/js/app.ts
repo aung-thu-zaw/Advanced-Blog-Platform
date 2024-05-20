@@ -1,5 +1,6 @@
 import './bootstrap';
 import '../css/app.css';
+import "preline/preline";
 
 import { createApp, h, DefineComponent } from 'vue';
 import { createInertiaApp } from '@inertiajs/vue3';
