@@ -9,7 +9,7 @@ import AuthorBlogDetailProfile from "@/Components/AuthorBlogDetailProfile.vue";
 </script>
 
 <template>
-    <Head title="Home" />
+    <Head title="Blog Detail" />
 
     <AppLayout>
         <section class="min-h-full">
