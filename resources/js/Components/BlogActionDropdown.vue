@@ -7,7 +7,7 @@ import { Link } from "@inertiajs/vue3";
         <button
             id="hs-dropdown-custom-icon-trigger"
             type="button"
-            class="flex items-center justify-center text-sm font-semibold text-gray-800 bg-white hs-dropdown-toggle"
+            class="flex items-center justify-center text-sm font-semibold text-gray-800 hs-dropdown-toggle"
         >
             <svg
                 class="flex-none text-gray-600 size-4"
