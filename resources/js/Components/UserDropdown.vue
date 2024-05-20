@@ -23,79 +23,110 @@ import { Link } from "@inertiajs/vue3";
         </button>
 
         <div
-            class="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-[15rem] bg-white shadow-md rounded-lg p-2 mt-2 divide-y divide-gray-200 border border-gray-300"
+            class="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-[15rem] bg-white shadow-md rounded-sm p-2 mt-2 divide-y divide-gray-200 border border-gray-200"
             aria-labelledby="hs-dropdown-with-icons"
         >
             <div class="py-2 first:pt-0 last:pb-0">
                 <div
-                    class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
+                    class="px-5 py-3 mb-2 -m-2 bg-gray-100 border-b border-b-gray-200"
                 >
-                    <Link
-                        as="button"
-                        href="#"
-                        class="block w-full text-sm font-semibold text-left bg-transparent whitespace-nowrap text-slate-700"
-                    >
-                        <i class="fa-regular fa-id-card mr-1.5"></i>
-                        My Account
-                    </Link>
+                    <p class="text-sm text-gray-500">Signed in as</p>
+                    <p class="text-sm font-medium text-gray-800 line-clamp-2">
+                        aungthuzaw@gmail.com
+                    </p>
                 </div>
+                <Link
+                    as="button"
+                    class="w-full flex items-center gap-x-3.5 py-2 px-3 rounded-sm text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
+                    href="#"
+                >
+                    <i class="fa-solid fa-user-circle"></i>
+                    Profile
+                </Link>
+                <Link
+                    as="button"
+                    class="w-full flex items-center gap-x-3.5 py-2 px-3 rounded-sm text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
+                    href="#"
+                >
+                    <i class="fa-solid fa-bookmark"></i>
+                    Library
+                </Link>
+                <Link
+                    as="button"
+                    class="w-full flex items-center gap-x-3.5 py-2 px-3 rounded-sm text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
+                    href="#"
+                >
+                    <i class="fa-regular fa-file-lines"></i>
+                    Stories
+                </Link>
+                <Link
+                    as="button"
+                    class="w-full flex items-center gap-x-3.5 py-2 px-3 rounded-sm text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
+                    href="#"
+                >
+                    <i class="fa-solid fa-line-chart"></i>
+                    Stats
+                </Link>
 
-                <div
-                    class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
+                <Link
+                    as="button"
+                    class="w-full flex items-center gap-x-3.5 py-2 px-3 rounded-sm text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
+                    href="#"
                 >
-                    <Link
-                        as="button"
-                        href="#"
-                        class="block w-full text-sm font-semibold text-left bg-transparent whitespace-nowrap text-slate-700"
-                    >
-                        <i class="fa-solid fa-boxes-packing mr-1.5"></i>
-                        My Orders
-                    </Link>
-                </div>
+                    <i class="fa-solid fa-gear"></i>
+                    Settings
+                </Link>
+            </div>
 
-                <div
-                    class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
+            <div class="py-2 first:pt-0 last:pb-0">
+                <Link
+                    as="button"
+                    class="w-full flex items-center gap-x-3.5 py-2 px-3 rounded-sm text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
+                    href="#"
                 >
-                    <Link
-                        as="button"
-                        href="#"
-                        class="block w-full text-sm font-semibold text-left bg-transparent whitespace-nowrap text-slate-700"
-                    >
-                        <i class="fa-solid fa-heart mr-1.5"></i>
-                        My Wishlists
-                    </Link>
-                </div>
+                    Refine Recommendations
+                </Link>
+                <Link
+                    as="button"
+                    class="w-full flex items-center gap-x-3.5 py-2 px-3 rounded-sm text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
+                    href="#"
+                >
+                    Manage Publication
+                </Link>
 
-                <div
-                    class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
+                <Link
+                    as="button"
+                    class="w-full flex items-center gap-x-3.5 py-2 px-3 rounded-sm text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
+                    href="#"
                 >
-                    <Link
-                        as="button"
-                        href="#"
-                        class="block w-full text-sm font-semibold text-left bg-transparent whitespace-nowrap text-slate-700"
-                    >
-                        <i class="fa-solid fa-star mr-1.5"></i>
-                        My Reviews
-                    </Link>
-                </div>
-
-                <div
-                    class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
+                    Apply For Author Verification
+                </Link>
+                <Link
+                    as="button"
+                    class="w-full flex items-center gap-x-3.5 py-2 px-3 rounded-sm text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
+                    href="#"
                 >
-                    <Link
-                        as="button"
-                        href="#"
-                        class="block w-full text-sm font-semibold text-left bg-transparent whitespace-nowrap text-slate-700"
-                    >
-                        <i class="fa-solid fa-rotate-left mr-1.5"></i>
-                        My Returns & Cancellations
-                    </Link>
-                </div>
+                    Become a Member
+                </Link>
+                <Link
+                    as="button"
+                    class="w-full flex items-center gap-x-3.5 py-2 px-3 rounded-sm text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
+                    href="#"
+                >
+                    Gift a Membership
+                </Link>
+                <Link
+                    as="button"
+                    class="w-full flex items-center gap-x-3.5 py-2 px-3 rounded-sm text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
+                    href="#"
+                >
+                    Help
+                </Link>
             </div>
 
             <div class="py-2 first:pt-0 last:pb-0">
                 <div
-                    class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
+                    class="flex items-center gap-x-3.5 py-2 px-3 rounded-sm text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
                 >
                     <Link
                         as="button"
