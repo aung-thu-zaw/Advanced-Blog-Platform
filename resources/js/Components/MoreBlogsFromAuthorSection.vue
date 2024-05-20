@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { Link } from "@inertiajs/vue3";
 import BlogCard from "@/Components/BlogCard.vue";
-import ListCard from "@/Components/ListCard.vue";
 import FollowButton from "@/Components/FollowButton.vue";
 import GiveATipTooltipButton from "@/Components/GiveATipTooltipButton.vue";
 import SubscribeNewsletterTooltipButton from "@/Components/SubscribeNewsletterTooltipButton.vue";

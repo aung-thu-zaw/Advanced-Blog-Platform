@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Head, Link } from "@inertiajs/vue3";
+import { Head } from "@inertiajs/vue3";
 import AppLayout from "@/Layouts/AppLayout.vue";
 import StaffPicks from "@/Components/StaffPicks.vue";
 import WhoToFollowSuggestions from "@/Components/WhoToFollowSuggestions.vue";

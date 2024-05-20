@@ -1,6 +1,4 @@
-<script setup>
-import TopicBadge from "@/Components/TopicBadge.vue";
-</script>
+<script setup lang="ts"></script>
 
 <template>
     <div class="space-y-5">
