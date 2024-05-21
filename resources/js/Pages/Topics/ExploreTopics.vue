@@ -18,6 +18,16 @@ import TopicBadge from "@/Components/TopicBadge.vue";
                     Explore Topics
                 </h1>
 
+                <p
+                    class="font-semibold text-sm text-center text-gray-700 mx-auto max-w-[900px] font-merriweather"
+                >
+                    Discover a wide range of topics on our Explore page, from
+                    technology and AI to self-improvement and productivity. Stay
+                    informed and inspired with curated content designed to
+                    expand your knowledge and spark curiosity. Dive in and find
+                    something new today!
+                </p>
+
                 <TopicSearchBox />
 
                 <div class="flex items-center justify-center space-x-3">
