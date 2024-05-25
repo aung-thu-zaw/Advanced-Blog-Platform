@@ -5,7 +5,7 @@ import UserDropdown from "@/Components/UserDropdown.vue";
 
 <template>
     <div
-        class="sticky top-0 z-50 flex flex-wrap w-full py-4 text-sm bg-white border-b border-b-gray-300 sm:justify-start sm:flex-nowrap"
+        class="sticky top-0 z-50 flex flex-wrap w-full py-4 text-sm bg-transparent sm:justify-start sm:flex-nowrap"
     >
         <nav
             class="max-w-[85rem] w-full mx-auto px-4 md:flex md:items-center md:justify-between"
@@ -83,30 +83,35 @@ import UserDropdown from "@/Components/UserDropdown.vue";
                         class="font-semibold text-gray-800 duration-200 hover:text-gray-600"
                         href="#"
                     >
-                        <i class="mr-1 fa-solid fa-edit"></i>
+                        Our Story
+                    </Link>
+
+                    <Link
+                        class="font-semibold text-gray-800 duration-200 hover:text-gray-600"
+                        href="#"
+                    >
+                        Membership
+                    </Link>
+
+                    <Link
+                        class="font-semibold text-gray-800 duration-200 hover:text-gray-600"
+                        href="#"
+                    >
                         Write
                     </Link>
 
+                    <Link
+                        class="font-semibold text-gray-800 duration-200 hover:text-gray-600"
+                        href="#"
+                    >
+                        SignIn
+                    </Link>
+
                     <button
-                        class="flex items-center justify-center w-10 h-10 p-3 text-lg font-bold text-gray-700 transition-all rounded-full hover:cursor-pointer hover:bg-gray-200"
+                        class="px-3 py-2.5 text-xs font-bold text-white transition-all bg-gray-800 rounded-full hover:bg-gray-700"
                     >
-                        <i class="fa-regular fa-bell"></i>
+                        Get Started
                     </button>
-
-                    <div
-                        class="flex items-center justify-start space-x-3 font-bold text-gray-300 hover:text-gray-300"
-                    >
-                        <!-- <NuxtLink
-                            v-if="!isAuthenticated"
-                            :to="localePath('/auth/sign-in')"
-                            class="text-xs rounded-md font-semibold border border-yellow-500 px-4 py-2.5 text-yellow-500 hover:bg-yellow-500 hover:text-white transition-all"
-                        >
-                            <i class="mr-1 fa-solid fa-right-to-bracket"></i>
-                            Sign In
-                        </NuxtLink> -->
-
-                        <UserDropdown />
-                    </div>
                 </div>
             </div>
         </nav>

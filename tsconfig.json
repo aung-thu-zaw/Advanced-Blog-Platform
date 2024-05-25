@@ -9,6 +9,7 @@
         "isolatedModules": true,
         "target": "ESNext",
         "esModuleInterop": true,
+        "jsxImportSource": "vue",
         "forceConsistentCasingInFileNames": true,
         "noEmit": true,
         "skipLibCheck": true,
