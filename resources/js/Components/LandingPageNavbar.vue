@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { Link } from "@inertiajs/vue3";
-import UserDropdown from "@/Components/UserDropdown.vue";
 </script>
 
 <template>
